@@ -1,0 +1,14 @@
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\bin\Debug\net7.0\FighterSpel.exe
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\bin\Debug\net7.0\FighterSpel.deps.json
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\bin\Debug\net7.0\FighterSpel.runtimeconfig.json
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\bin\Debug\net7.0\FighterSpel.dll
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\bin\Debug\net7.0\FighterSpel.pdb
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\obj\Debug\net7.0\FighterSpel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\obj\Debug\net7.0\FighterSpel.AssemblyInfoInputs.cache
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\obj\Debug\net7.0\FighterSpel.AssemblyInfo.cs
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\obj\Debug\net7.0\FighterSpel.csproj.CoreCompileInputs.cache
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\obj\Debug\net7.0\FighterSpel.dll
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\obj\Debug\net7.0\refint\FighterSpel.dll
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\obj\Debug\net7.0\FighterSpel.pdb
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\obj\Debug\net7.0\FighterSpel.genruntimeconfig.cache
+C:\Users\wilmer.odin\Documents\ProgrammeringKurs\FighterSpel\FighterSpel\obj\Debug\net7.0\ref\FighterSpel.dll
