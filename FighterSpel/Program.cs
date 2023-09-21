@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// SLUMP
+Random generator = new Random();
+
+int slumptal = generator.Next();
+
+Console.WriteLine(slumptal);
+
+
+// WHILE LOOP
+
+Console.ReadLine();
