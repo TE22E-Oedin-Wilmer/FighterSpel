@@ -8,15 +8,15 @@
 
 // WHILE-LOOP
 
-int tal = 100;
+// int tal = 100;
 
-while (tal > 0) {
-    Console.WriteLine(tal);
-    tal --;
-}
-
-
-Console.WriteLine("FÄRDIG");
+// while (tal > 0) {
+    // Console.WriteLine(tal);
+    // tal --;
+// }
 
 
-Console.ReadLine();
+// Console.WriteLine("FÄRDIG");
+
+
+// Console.ReadLine();
