@@ -27,7 +27,7 @@ while (VaderHP > 0 && LukeHP > 0)
     int damageVader = generator.Next(0, 15);
 
     int damageLuke = generator.Next(0, 15);
-Console.Clear();
+    Console.Clear();
     Console.WriteLine($"Vader took {damageVader} damage!");
     Console.WriteLine($"Luke took {damageLuke} damage!");
     Console.WriteLine();
@@ -57,6 +57,12 @@ else if (VaderHP < LukeHP)
     Console.WriteLine("Luke was to fast for his old man and won!");
 }
 
+else if (VaderHP == LukeHP)
+{
+    Console.Clear();
+    Console.BackgroundColor = ConsoleColor.DarkBlue;
+    Console.WriteLine("An equal duel. Balance in the force was achieved.");
+}
 
 
 
