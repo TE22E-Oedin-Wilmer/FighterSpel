@@ -28,6 +28,8 @@ while (VaderHP > 0 && LukeHP > 0)
 
     int damageLuke = generator.Next(0, 15);
     Console.Clear();
+    VaderHP -= damageVader;
+    LukeHP -= damageLuke;
     Console.WriteLine($"Vader took {damageVader} damage!");
     Console.WriteLine($"Luke took {damageLuke} damage!");
     Console.WriteLine();
@@ -37,8 +39,7 @@ while (VaderHP > 0 && LukeHP > 0)
     Console.WriteLine("Keep dueling! Press [ENTER]");
     Console.WriteLine();
     
-    VaderHP -= damageVader;
-    LukeHP -= damageLuke;
+
     Console.ReadKey();
 }
 
