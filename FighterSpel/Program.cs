@@ -12,21 +12,34 @@
 
 // WHILE-LOOP
 
-using System.Collections.ObjectModel;
-using System.Drawing;
-
 int VaderHP = 100;
 int LukeHP = 100;
+
+Console.WriteLine("Two fighters appear and a feral battle to the death is about to begin.");
+Console.WriteLine("Luke steps forward.");
+Console.WriteLine("Vader emerges from the dark.");
+Console.WriteLine();
+Console.WriteLine("Current HP:");
+Console.WriteLine($"Vader: {VaderHP}");
+Console.WriteLine($"Luke: {LukeHP}");
+Console.WriteLine("Start duel! Press [ENTER]");
+Console.WriteLine();
+
+// VaderHP -= damageVader;
+// LukeHP -= damageLuke;
+Console.ReadKey();
+Random generator = new Random();
 
 while (VaderHP > 0 && LukeHP > 0)
 {
 
-
-    Random generator = new Random();
-
     int damageVader = generator.Next(0, 15);
 
     int damageLuke = generator.Next(0, 15);
+
+    VaderHP -= damageVader;
+    LukeHP -= damageLuke;
+
     Console.Clear();
     Console.WriteLine($"Vader took {damageVader} damage!");
     Console.WriteLine($"Luke took {damageLuke} damage!");
@@ -34,11 +47,11 @@ while (VaderHP > 0 && LukeHP > 0)
     Console.WriteLine("Current HP:");
     Console.WriteLine($"Vader: {VaderHP}");
     Console.WriteLine($"Luke: {LukeHP}");
+    Console.WriteLine();    
     Console.WriteLine("Keep dueling! Press [ENTER]");
     Console.WriteLine();
+
     
-    VaderHP -= damageVader;
-    LukeHP -= damageLuke;
     Console.ReadKey();
 }
 
@@ -47,7 +60,7 @@ if (LukeHP < VaderHP)
     Console.Clear();
     Console.BackgroundColor = ConsoleColor.DarkRed;
     Console.WriteLine("Vader showed his true powers and won!");
-
+    VaderWon();
 }
 
 else if (VaderHP < LukeHP)
@@ -67,6 +80,36 @@ else if (VaderHP == LukeHP)
 
 
 // Console.WriteLine("FÄRDIG");
+
+static void VaderWon()
+{
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣶⣾⣿⡉⢤⣍⡓⢶⣶⣦⣤⣉⠒⠤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣷⡀⠙⣿⣷⣌⠻⣿⣿⣿⣶⣌⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⠈⢿⣿⡆⠹⣿⣿⣿⣿⣷⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠹⣿⡄⢻⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⣿⣿⣷⣽⣷⢸⣿⡿⣿⡿⠿⠿⣆⠀⠀⠀⠀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠐⠾⢭⣭⡼⠟⠃⣤⡆⠘⢟⢺⣦⡀⠀⠀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢛⣥⣶⠾⠿⠛⠳⠶⢬⡁⠀⠀⠘⣃⠤⠤⠤⢍⠻⡄⠀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⡿⣫⣾⡿⢋⣥⣶⣿⠿⢿⣿⣿⣿⠩⠭⢽⣷⡾⢿⣿⣦⢱⡹⡀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⡟⠈⠛⠏⠰⢿⣿⣿⣧⣤⣼⣿⣿⣿⡏⠩⠽⣿⣀⣼⣿⣿⢻⣷⢡⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⢁⣿⣷⣦⡀⠀⠉⠙⠛⠛⠛⠋⠁⠙⢻⡆⠀⢌⣉⠉⠉⠀⠸⣿⣇⠆⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⠷⣄⢠⣶⣾⣿⣿⣿⣿⣿⠁⠀⠀⢿⣿⣿⣿⣷⠈⣿⠸⡀⠀");
+Console.WriteLine("⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⠀⣌⡛⠿⣿⣿⠀⠈⢧⢿⣿⡿⠟⠋⠉⣠⣤⣤⣤⣄⠙⢿⣿⠏⣰⣿⡇⢇⠀");
+Console.WriteLine("⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⣶⣤⣙⠣⢀⠈⠘⠏⠀⠀⢀⣴⢹⡏⢻⡏⣿⣷⣄⠉⢸⣿⣿⣷⠸⡄");
+Console.WriteLine("⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⠁⣾⣟⣛⠛⠛⠻⠿⠶⠬⠔⠀⣠⡶⠋⠿⠈⠷⠸⠇⠻⠏⠻⠆⣀⢿⣿⣿⡄⢇");
+Console.WriteLine("⠀⢰⣿⣿⣿⣿⠿⠿⠛⠋⣰⣿⣿⣿⣿⠿⠿⠿⠒⠒⠂⠀⢨⡤⢶⣶⣶⣶⣶⣶⣶⣶⣶⠆⠃⣀⣿⣿⡇⣸");
+Console.WriteLine("⢀⣿⣿⠿⠋⣡⣤⣶⣾⣿⣿⣿⡟⠁⠀⣠⣤⣴⣶⣶⣾⣿⣿⣷⡈⢿⣿⣿⣿⣿⠿⠛⣡⣴⣿⣿⣿⣿⠟⠁");
+Console.WriteLine("⣼⠋⢁⣴⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣎⠻⠟⠋⣠⣴⣿⣿⣿⣿⠿⠋⠁⠀⠀");
+Console.WriteLine("⢿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣴⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣠⣾⣿⠿⠿⠟⠋⠁⠀⠀⠀⠀⠀");
+Console.WriteLine("⠀⠉⠛⠛⠿⠿⠿⢿⣿⣿⣿⣵⣾⣿⣧⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+}
+
+
+
+
+
 
 
 Console.ReadLine();

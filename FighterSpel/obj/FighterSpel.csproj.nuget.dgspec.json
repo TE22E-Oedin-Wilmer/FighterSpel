@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\FighterSpel.csproj": {}
+    "c:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\FighterSpel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\FighterSpel.csproj": {
+    "c:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\FighterSpel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\FighterSpel.csproj",
+        "projectUniqueName": "c:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\FighterSpel.csproj",
         "projectName": "FighterSpel",
-        "projectPath": "C:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\FighterSpel.csproj",
+        "projectPath": "c:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\FighterSpel.csproj",
         "packagesPath": "C:\\Users\\wilmer.odin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\obj\\",
+        "outputPath": "c:\\Users\\wilmer.odin\\Documents\\ProgrammeringKurs\\FighterSpel\\FighterSpel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
